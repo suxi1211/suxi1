@@ -1,10 +1,10 @@
 wedding <- list(venue = "chick-fil-a",
                 guest = tribble(~name,     ~meal, ~age,
                                 ##--------/------/-----
-                                "Yoshi",   "V",   29L,
+                                "Yoshi",   "V",   26L,
                                 "Wario",   "C",   27L,
                                 "Bowser",  "V",   34L,
-                                "Luigi",   "C",   36L,
+                                "Luigi",   "C",   35L,
                                 "Toad",    "B",   34L), 
                 bride = "Peach",
                 groom = "Mario",
