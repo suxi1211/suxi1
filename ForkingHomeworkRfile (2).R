@@ -11,4 +11,11 @@ diamonds%>%
   arrange(desc(carat))%>%
   slice(1:20)
 
-diamonds[, .(carat, cut, price)][cut == "Premium", price >7000 & price< 1000][order(-carat)][1:20]
+
+
+diamonds
+d<-data.table(diamonds)
+head(d)
+d[, .(carat, cut, price)]->d2
+d2[cut == "Premium" & price >7000 & price<10000, .(carat,cut,price)]->d3
+d3[order(-carat)][1:20]
